@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root{
+    --font: "Lato", sans-serif;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+}
+.page-overlay{
+    background-color: #c42b05;
+    mix-blend-mode: overlay;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -86;
+}
+.background-overlay{
+    background-image: url(./images/cover_art.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(20px);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -99;
+}
+.container{
+    width: 80%;
+    max-width: 100%;
+    height: 400px; 
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+}
+.img-custom{
+    height: 80vh;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+small{
+    font-size: .8rem;
+}
+
+/* media queries  */
+@media(max-width:768px){
+    .img-custom{
+        height: 30vh;
+        margin-bottom: 2rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .texts p{
+        font-size: .86rem;
+    }
+    button{
+        font-size: .87rem !important;
+    }
+    .texts small{
+        font-size: .75rem;
+
+    }
+    .texts{
+        line-height: 1;
+    }
+    .title{
+        text-align: center;
+    }
+
+}
+
